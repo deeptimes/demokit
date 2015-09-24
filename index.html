@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>演示DEMO</title>
+    <meta name="description" content="演示DEMO">
+    <meta name="author" content="DeepTimes">
+    <link rel="stylesheet" href="http://oss.ztin.net/plugins/slider/cs/csmin.css">
+    <style type="text/css">
+        body {margin: 0px; padding:0px;}
+        .cs.height-fixed .cs-canvas{height:600px;}
+        .cs-viewport{background-color:#fff;}
+        .cs-prev,.cs-next{display:inline-block;margin-right:20px;padding:10px 0;position:fixed;top:0;width:20%;height:100%;opacity: 0;}
+        .cs-next{right:0;}
+        .cs-prev{left:0;}
+    </style>
+</head>
+<body>
+    <div class="cs" data-slider="isNav-on isPag-off height-auto">   
+        <a class="cs-img" href="images/pic1.jpg">[img1]</a>
+        <a class="cs-img" href="images/pic2.jpg">[img2]</a>
+        <a class="cs-img" href="images/pic3.jpg">[img3]</a>
+        <a class="cs-img" href="images/pic4.jpg">[img4]</a>
+    </div>
+    <script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://oss.ztin.net/plugins/slider/cs/csmin.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('.cs').codeslider();
+            var cs = $('.cs').data('codeslider');
+        });
+    </script>
+</body>
+</html>
